@@ -1,0 +1,9 @@
+src/
+tests/
+*.ts
+!*.d.ts
+rollup.config.mjs
+tsconfig.json
+.gitignore
+.npmignore
+init.sh

@@ -1,0 +1,32 @@
+{
+  "name": "carnot-sdk",
+  "version": "1.0.0",
+  "description": "Zero-latency edge routing for LLMs using Shannon entropy.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.mjs" },
+      "require": { "types": "./dist/index.d.ts", "default": "./dist/index.cjs" }
+    }
+  },
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs && tsc --emitDeclarationOnly"
+  },
+  "keywords": ["ai", "llm", "edge-computing", "shannon-entropy", "optimization", "cost-reduction", "green-ai", "open-source"],
+  "author": "Fleury99",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fleury99/carnot-sdk"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.9.6",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,20 @@
+# Dépendances (Téléchargées via npm install)
+node_modules/
+
+# Le build compilé (Les devs le généreront sur leur machine, on ne pollue pas le repo avec du code généré)
+dist/
+
+# L'archive finale (Le fichier .tgz que vous venez de créer)
+*.tgz
+
+# Les scripts de notre pivot (Nettoyage interne)
+pivot.sh
+
+# Les logs et variables d'environnement
+*.log
+.env
+
+# Les fichiers systèmes de votre ordinateur (À cacher absolument)
+.DS_Store
+Thumbs.db
+
